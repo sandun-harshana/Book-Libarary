@@ -42,6 +42,7 @@ function AddBook({ darkMode, glass }) {
         <p className="text-red-500 font-semibold mb-3 text-sm">{error}</p>
       )}
 
+      {/* Title Input */}
       <input
         className={`w-full p-2 mb-3 rounded-lg border focus:ring-2 focus:ring-blue-400 transition-all ${
           darkMode
@@ -53,6 +54,7 @@ function AddBook({ darkMode, glass }) {
         onChange={(e) => setTitle(e.target.value)}
       />
 
+      {/* Author Input */}
       <input
         className={`w-full p-2 mb-3 rounded-lg border focus:ring-2 focus:ring-blue-400 transition-all ${
           darkMode
@@ -64,6 +66,7 @@ function AddBook({ darkMode, glass }) {
         onChange={(e) => setAuthor(e.target.value)}
       />
 
+      {/* Image Input */}
       <input
         className={`w-full p-2 mb-3 rounded-lg border focus:ring-2 focus:ring-blue-400 transition-all ${
           darkMode
@@ -86,6 +89,7 @@ function AddBook({ darkMode, glass }) {
         />
       )}
 
+      {/* Add Button */}
       <motion.button
         whileTap={{ scale: 0.95 }}
         whileHover={{ scale: 1.05 }}
